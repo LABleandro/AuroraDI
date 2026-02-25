@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Aurora Diagnostic Imaging | Clarity in First Light</title>
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<script src="./script.js"></script>
+</head>
+
+<body>
+
+    <header class="header-container">
+        <nav class="navbar">
+            <button id="hamburgerBtn" class="hamburger" aria-label="Open navigation" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <a href="#" class="logo">
+                <img src="./images/logo.png" alt="Aurora DI logo" class="site-logo">
+                <!--<svg class="aurora-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="Aurora Logo">
+                    <defs>
+                        <linearGradient id="aurora-gradient" x1="0%" y1="100%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#8A8AB5"/> <stop offset="50%" stop-color="#FFDAB9"/> <stop offset="100%" stop-color="#D4AF37"/> </linearGradient>
+                    </defs>
+                    <path d="M 50 5 L 90 95 L 75 95 L 65 70 L 35 70 L 25 95 L 10 95 L 50 5 Z M 50 25 L 40 55 Q 50 45 60 55 L 50 25 Z" fill="url(#aurora-gradient)"/>
+                </svg>-->
+                <span>AURORA Diagnostic Imaging</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#resources" class="nav-link">Patient Resources</a></li>
+            </ul>
+            <button class="btn-book-nav" onclick="openModal()">Book Online</button>
+        </nav>
+
+        <div class="contact-bar">
+            <span class="headerNum">
+                <span id="req_Notice">We accept all valid requisition forms from any clinic.</span> | 
+                <span><a href="tel:+1-877-456-8752" class="contact_Num">Call Us: +1-877-456-8752</a></span>
+                
+            </span>
+
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-image-container">
+            <div class="hero-image" role="img" aria-label="Modern clinic interior with soft lighting"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Clarifying Health with the <br><span class="hero-accent">First Light of Day</span>.</h1>
+            <p class="hero-text">Modern, compassionate diagnostic imaging. We combine state-of-the-art technology with a calming environment to provide precise results when it matters most.</p>
+            <button class="btn-book-nav" style="padding: 1rem 2.5rem; font-size: 1.1rem;" onclick="openModal()">Request Appointment</button>
+        </div>
+        
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon-box">
+                    <i class="fas fa-x-ray"></i>
+                </div>
+                <h3>Digital X-Ray</h3>
+                <h4>Walk-in X-ray available.</h4>
+                <p>We offer low-dose digital radiography for rapid, high-resolution imaging of bone structure and chest pathology. Our digital systems ensure minimal exposure while maximizing image quality for your physician.</p>
+                <p class="learnMore">Learn More<i class="fas fa-chevron-down"></i></p>
+                <div class="moreServices">
+                    <span>Digital X-ray</span>
+                    <ol>
+                        <li>Sample xray service info</li>
+                        <li>Sample xray service info</li>
+                        <li>Sample xray service info</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon-box">
+                    <i class="fas fa-wave-square"></i>
+                </div>
+                <h3>Advanced Ultrasound</h3>
+                <h4>We accept same day ultrasound depending on availability.</h4>
+                <p>Utilizing high-frequency sound waves to produce real-time images of soft tissues. Our peaceful sonography suites offer exceptional clarity for abdominal, pelvic, vascular, and obstetrical exams without radiation.</p>
+                <p class="learnMore">Learn More<i class="fas fa-chevron-down"></i></p>
+                <div class="moreServices">
+                    <span>Advanced Ultrasound</span>
+                    <ol>
+                        <li>Sample ultrasound service info</li>
+                        <li>Sample ultrasound service info</li>
+                        <li>Sample ultrasound service info</li>
+                    </ol>
+                </div>
+            </div> <!--<div class="service-card">
+                <div class="service-icon-box">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <h3>Womens Imaging</h3>
+                <p>Specialized care in a comfortable setting. We provide dedicated services including breast ultrasound and bone density scanning, focusing on early detection and preventative health.</p>
+            </div>-->
+        </div>
+        <p id="troubleshoot"></p>
+    </section>
+
+    <section id="resources" class="resources">
+        <h2>Patient Resources & FAQ</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">Do I need a referral or requisition form? <i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer">
+                    <p>Yes. Diagnostic imaging exams are generally performed upon the request of a physician or nurse practitioner. You must have a valid requisition form signed by your healthcare provider. You can upload this during our online booking process.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">How do I prepare for an Ultrasound appointment? <i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer">
+                    <p>Preparation depends on the exam type. For abdominal exams, typically fast for 6-8 hours. For pelvic exams, a full bladder is usually required (drink 1L of water 1 hour prior). Specific instructions will be given upon booking confirmation.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Are X-Ray services walk-in or by appointment? <i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer">
+                    <p>We prioritize booked appointments to minimize wait times. We do accommodate urgent walk-in X-ray requisitions whenever capacity allows, but we highly recommend booking online to ensure timely service.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Where are you located and is there parking? <i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer">
+                    <p>We are located at 123 Aurora Blvd. Yes, we have complimentary patient parking available directly in front of the clinic entrance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <div class="logo" style="color: var(--white); margin-bottom: 1rem;">
+                    <img src="./images/logo.png" alt="Aurora DI logo" class="footer-logo">
+                    <!--<svg class="aurora-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="height: 35px;" aria-hidden="true">
+                         <path d="M 50 5 L 90 95 L 75 95 L 65 70 L 35 70 L 25 95 L 10 95 L 50 5 Z M 50 25 L 40 55 Q 50 45 60 55 L 50 25 Z" fill="var(--gold-warm)"/>
+                    </svg>-->
+                    <span>AURORA</span>
+                </div>
+                <p style="color: var(--lavender-medium);">Providing clarity through advanced imaging and compassionate care. Your health, illuminated.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#resources">Patient FAQ</a></li>
+                    <li><a href="#" onclick="openModal()">Book Now</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <div class="contact-link">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:+1-877-456-8752" class="contact_Num">+1(877)-456-8752</a>
+                </div>
+                <a id="dynamicMapLink" class="contact-link" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>123 Aurora Blvd, Suite 100<br>Edmonton, AB T5J 0K1</span>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026         Aurora Diagnostic Imaging Clinic. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="bookingModal" role="dialog" aria-modal="true">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3>Request Appointment</h3>
+                <div id="formFeedback"></div>
+            </div>
+            
+            <form id="bookingForm" novalidate>
+                
+                <div class="form-group">
+                    <label for="firstName" class="form-label">First Name *</label>
+                    <input type="text" id="firstName" name="firstName" class="form-input" required>
+                    <div class="error-message" id="firstNameError">First name is required.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName" class="form-label">Last Name *</label>
+                    <input type="text" id="lastName" name="lastName" class="form-input" required>
+                    <div class="error-message" id="lastNameError">Last name is required.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="form-label">Email Address *</label>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="user@domain.com" required>
+                    <div class="error-message" id="emailError">Please enter a valid email address (e.g., user@domain.com).</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone" class="form-label">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" class="form-input" placeholder="(555) 123-4567" required>
+                    <div class="error-message" id="phoneError">Please enter a valid phone number (e.g., 555-123-4567).</div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Requisition Form (Optional)</label>
+                    <input type="file" id="fileUpload" name="attachment" multiple accept=".pdf, .jpg, .jpeg, .png" style="display: none;">
+                    <label for="fileUpload" class="file-upload-label">
+                        <i class="fas fa-cloud-upload-alt" style="font-size: 2rem; color: var(--lavender-deep);"></i>
+                        <div style="margin-top: 10px; font-weight: 500;">Click to upload files</div>
+                        <div class="file-upload-text">PDF, JPG, PNG only. Max 4 files. Total size max 10MB.</div>
+                    </label>
+                    <div id="fileListDisplay" class="file-list-display"></div>
+                    <div class="error-message" id="fileError"></div>
+                </div>
+
+                <div class="modal-buttons">
+                    <button type="button" class="btn-modal btn-cancel" onclick="closeModal()">Cancel</button>
+                    <button type="submit" id="submitBtn" class="btn-modal btn-submit">Submit Request</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- EmailJS Library -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        // Initialize EmailJS - Replace with your Public Key
+        emailjs.init("YOUR_EMAILJS_PUBLIC_KEY_HERE");
+    </script>
+</body>
+</html>
