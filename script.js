@@ -57,6 +57,7 @@
                         if (navMenu.classList.contains('mobile')) {
                             navMenu.classList.remove('mobile');
                             hamburgerBtn.setAttribute('aria-expanded', 'false');
+                            if (headerContainer) headerContainer.classList.toggle('nav-open', false);
                         }
                     });
                 });
@@ -68,6 +69,7 @@
                     if (!navMenu.contains(target) && !hamburgerBtn.contains(target)) {
                         navMenu.classList.remove('mobile');
                         hamburgerBtn.setAttribute('aria-expanded', 'false');
+                        if (headerContainer) headerContainer.classList.toggle('nav-open', false);
                     }
                 });
             }
@@ -328,4 +330,5 @@
 
             // Update when the window is resized
             window.addEventListener('resize', showWindowSize);*/
+
 });
